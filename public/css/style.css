@@ -10,6 +10,7 @@
 	padding: 0;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	border-bottom: 1px #8e8e8e solid;
+	z-index: 999;
 }
 
 #home li {
@@ -84,6 +85,7 @@ a.about:link, a.about:visited, a.contact:link, a.contact:visited, a.facebook:lin
 	line-height: 70px;
 	height: 70px;
 	width: 220px;
+	z-index: 999;
 }
 
 a.about:hover, a.contact:hover, a.facebook:hover, a.twitter:hover, a.links:hover {
@@ -92,6 +94,7 @@ a.about:hover, a.contact:hover, a.facebook:hover, a.twitter:hover, a.links:hover
 	color: #474747;
 	text-decoration: none;
 	background: #d1d1d1;
+	z-index: 999;
 }
 
 a.links{
@@ -104,12 +107,22 @@ a.links{
 	line-height: 70px;
 	height: 70px;
 	width: 220px;
+	z-index: 999;
 }
 
 a.facebook, a.twitter {
 	position: relative;
 	display: inline-block;
-	z-index: 999;
-	background: #d1d1d1;
+	background: #afe0d6;
 	left: -41;
+	z-index: 999;
+}
+
+a.facebook:hover, a.twitter:hover {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 22px;
+	color: #474747;
+	text-decoration: none;
+	background: #d1d1d1;
+	z-index: 999;
 }
