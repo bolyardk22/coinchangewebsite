@@ -21,7 +21,7 @@
 	font-size: 30px;
 }
 
-a.one:link, a.one:visited {
+a.one:link, a.one:visited, a.one:hover {
 	position: relative;
 	top: -10px;
 	left: -50px;
@@ -36,13 +36,31 @@ a.one:link, a.one:visited {
 #optionsdiv {
 	float: right;
 	position: relative;
-	top: -48px;
+	top: -45px;
+/*	padding: 20px;*/
+}
+
+#options {
+	
 }
 
 #options li {
 	list-style-type: none;
 	display: inline;
-	padding: 20px;
+	padding-right: 20px;
+}
+
+#theNavBar li ul {
+  position: absolute;
+  display: none;
+}
+
+#theNavBar li:hover ul {
+  display: block;
+}
+
+#theNavBar li ul li {
+  display: block;
 }
 
 body {
@@ -59,16 +77,29 @@ body {
 	top: 75px;
 }
 
-a.about:link, a.about:visited, a.contact:link, a.contact:visited {
+a.about:link, a.about:visited, a.contact:link, a.contact:visited, a.facebook:link, a.facebook:visited, a.twitter:link, a.twitter:visited {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	font-size: 22px;
 	color: #474747;
 	text-decoration: none;
 }
 
-a.links:link, a.links:visited {
+a.about:hover, a.contact:hover, a.facebook:hover, a.twitter:hover, a.links:hover {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 22px;
+	color: #474747;
+	text-decoration: none;
+	background: #d1d1d1;
+}
+
+a.links{
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	font-size: 22px;
 	color: #474747;
 	list-style-type: none;
 	text-decoration: none;
+}
+
+a.facebook, a.twitter {
+	padding-bottom: 5px;
+}
