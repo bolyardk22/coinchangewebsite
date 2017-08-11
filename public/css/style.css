@@ -1,0 +1,74 @@
+#theNavBar {
+	display: inline;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 70px;
+	width: 100%;
+	background-color: #afe0d6;
+	margin: 0;
+	padding: 0;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	border-bottom: 1px #999999 groove;
+}
+
+#home li {
+	position: relative;
+	float: left;
+}
+
+#home {
+	font-size: 30px;
+}
+
+a.one:link, a.one:visited {
+	position: relative;
+	top: -10px;
+	left: -50px;
+	font-weight: normal;
+	font-size: 45px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	color: #474747;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#optionsdiv {
+	float: right;
+	position: relative;
+	top: -48px;
+}
+
+#options li {
+	list-style-type: none;
+	display: inline;
+	padding: 20px;
+}
+
+body {
+	background-color: #a3a3a3;
+}
+
+#question {
+	position: relative;
+	top: 75px;
+}
+
+#coin_hash_div {
+	position: relative;
+	top: 75px;
+}
+
+a.about:link, a.about:visited, a.contact:link, a.contact:visited {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 22px;
+	color: #474747;
+	text-decoration: none;
+}
+
+a.links:link, a.links:visited {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 22px;
+	color: #474747;
+	list-style-type: none;
+	text-decoration: none;
