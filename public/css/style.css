@@ -17,6 +17,7 @@
 	display: inline-block;
 	float: left;
 	height: 70px;
+	line-height: 70px;
 }
 
 #home {
@@ -82,7 +83,7 @@ a.about:link, a.about:visited, a.contact:link, a.contact:visited, a.facebook:lin
 	text-decoration: none;
 	line-height: 70px;
 	height: 70px;
-	width: 200px;
+	width: 220px;
 }
 
 a.about:hover, a.contact:hover, a.facebook:hover, a.twitter:hover, a.links:hover {
@@ -94,6 +95,7 @@ a.about:hover, a.contact:hover, a.facebook:hover, a.twitter:hover, a.links:hover
 }
 
 a.links{
+	display: inline-block;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	font-size: 22px;
 	color: #474747;
@@ -101,9 +103,13 @@ a.links{
 	text-decoration: none;
 	line-height: 70px;
 	height: 70px;
-	width: 200px;
+	width: 220px;
 }
 
 a.facebook, a.twitter {
-	padding-bottom: 5px;
+	position: relative;
+	display: inline-block;
+	z-index: 999;
+	background: #d1d1d1;
+	left: -41;
 }
