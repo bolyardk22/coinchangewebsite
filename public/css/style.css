@@ -14,7 +14,9 @@
 
 #home li {
 	position: relative;
+	display: inline-block;
 	float: left;
+	height: 70px;
 }
 
 #home {
@@ -36,18 +38,13 @@ a.one:link, a.one:visited, a.one:hover {
 #optionsdiv {
 	float: right;
 	position: relative;
-	top: -45px;
-/*	padding: 20px;*/
-}
-
-#options {
-	
+	top: -68px;
+	text-align: center;
 }
 
 #options li {
 	list-style-type: none;
 	display: inline;
-	padding-right: 20px;
 }
 
 #theNavBar li ul {
@@ -78,10 +75,14 @@ body {
 }
 
 a.about:link, a.about:visited, a.contact:link, a.contact:visited, a.facebook:link, a.facebook:visited, a.twitter:link, a.twitter:visited {
+	display: inline-block;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	font-size: 22px;
 	color: #474747;
 	text-decoration: none;
+	line-height: 70px;
+	height: 70px;
+	width: 200px;
 }
 
 a.about:hover, a.contact:hover, a.facebook:hover, a.twitter:hover, a.links:hover {
@@ -98,6 +99,9 @@ a.links{
 	color: #474747;
 	list-style-type: none;
 	text-decoration: none;
+	line-height: 70px;
+	height: 70px;
+	width: 200px;
 }
 
 a.facebook, a.twitter {
