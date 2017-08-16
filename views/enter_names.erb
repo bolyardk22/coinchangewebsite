@@ -24,15 +24,19 @@
 <body>
 	<div id="question">
 		How many people are in your party?
-		<form method = "post" action = "/index">
-			<input type = "numbers" min = 1 max = 999 name = "num1">
+		<form method = "post" action = "pairs_out" id = "text_box">
+			<input type ="number" min = 4 max = 99 autofocus = "autofocus" id ="nameList" oninput = "nameFunction()" >
+			<p id = "demo"></p>
 			<input type = "submit">
 		</form>
 	</div>
 </body>
 
-<div id="bottomstuff">
+<script src = "js/namefunc.js"></script>
 
+<div id="bottomstuff">
+	
 </div>
 
 </html>
+

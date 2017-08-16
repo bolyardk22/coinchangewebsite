@@ -1,24 +1,32 @@
 require 'sinatra'
-require_relative 'coins.rb'
+require_relative 'compare_names.rb'
 
 get '/' do
-	erb :index
+   erb :enter_names
 end
 
-post '/index' do
-	num1 = params[:num1]
-	coin_hash = params[:coin_hash]
-	coin_hash = change_string(change_hashes(num1.to_f))
-	redirect '/coin_return?num1=' + '&num1=' + num1 + '&coin_hash=' + coin_hash
+post '/pairs_out' do
+   names = params.values
+   names_two = clean(shuffle_names(names))
+   erb :output, :locals => {:names_two=>names_two}
 end
 
-get '/coin_return' do
-	num1 = params[:num1]
-	coin_hash = params[:coin_hash]
-	erb :coin_return, :locals=> {:num1=>num1,:coin_hash=>coin_hash}
+get '/enter_names' do
+	names_two = params[:names_two]
+	erb :enter_names, :locals=> {:names_two=>names_two}
 end
 
-post '/coin_return' do
-	num1 = params[:num1]
-	coin_hash = params[:coin_hash]
+post '/enter_names' do
+	names_two = params[:names_two]
+	redirect '/output?num1=' + num1
 end
+
+get '/output' do
+	names_two = params[:names_two]
+	erb :output, :locals=> {:names_two=>names_two}
+end
+
+post '/output' do
+	names_two = params[:names_two]
+end
+

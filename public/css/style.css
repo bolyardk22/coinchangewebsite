@@ -68,7 +68,10 @@ body {
 
 #question {
 	position: relative;
-	top: 75px;
+	top: 100px;
+	left: 25px;
+	font-size: 18px;
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 }
 
 #coin_hash_div {
@@ -125,4 +128,18 @@ a.facebook:hover, a.twitter:hover {
 	text-decoration: none;
 	background: #d1d1d1;
 	z-index: 999;
+}
+
+#bodystuff {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+#randomlyPairedGroups {
+	position: relative;
+	font-size: 18px;
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	top: 100px;
+	left: 25px;
 }
